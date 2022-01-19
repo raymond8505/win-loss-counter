@@ -3,17 +3,19 @@ import { css } from "@emotion/css";
 import Counter from "./Counter";
 import { useCounters } from "./CounterContext";
 
-const Counters = ({}) => {
+const Counters = () => {
 
     const {reset} = useCounters();
 
     return (<div
         className={css`
-          width: 100vw;
-          height: 100vh;
+          width: 100vmax;
+          height: 100vmin;
           display: flex;
           justify-content: space-around;
           align-items: center;
+          background-color: #333;
+          color: #eee
         `}
       >
         <Counter label="Wins" slug="wins" />

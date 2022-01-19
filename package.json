@@ -1,6 +1,11 @@
 {
   "dependencies": {
     "@emotion/css": "^11.7.1",
-    "@emotion/styled": "^11.6.0"
+    "@emotion/styled": "^11.6.0",
+    "ftp": "^0.3.10"
+  },
+  "scripts": {
+    "deploy": "node deploy",
+    "build": "cd ./client && npm run build"
   }
 }

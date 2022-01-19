@@ -33,9 +33,18 @@ const Counter = ({
     return (<div className={css`
         text-align: center;
     `}>
-        <h2>{label ? label : slug}</h2>
-        <h3>{counter.count}</h3>
-        <h4>{toPercent(counter.count / total || 0)}%</h4>
+        <h2 className={css`
+            margin: 0;
+        `}>{label ? label : slug}</h2>
+        <h3 className={css`
+            font-size: 5rem;
+            margin: 0;
+            `}>{counter.count}</h3>
+        <h4 className={css`
+            font-size: 1.5rem;
+            margin: 0 0 1em 0;
+            opacity: .6;
+        `}>{toPercent(counter.count / total || 0)}%</h4>
         <button onClick={() => {
             setCounter(slug,counter.count - 1);
         }}
