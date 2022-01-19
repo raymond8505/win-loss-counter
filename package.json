@@ -6,6 +6,7 @@
   },
   "scripts": {
     "deploy": "node deploy",
-    "build": "cd ./client && npm run build"
+    "build": "cd ./client && npm run build",
+    "deploybuild": "cd ./client && npm run build && cd ../ && npm run deploy"
   }
 }

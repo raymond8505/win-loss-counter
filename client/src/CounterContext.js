@@ -31,7 +31,6 @@ export const CounterController = () => {
     let total = 0;
 
     Object.keys(state.counters).forEach((counter, c) => {
-      console.log(counter, state.counters[counter].count);
       total += state.counters[counter].count;
     });
 
